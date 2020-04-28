@@ -7,10 +7,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.nn import Parameter
 
-import utils
-import metrics
 import config_bayesian as cfg
-from .misc import ModuleWrapper
+from bbb import utils, metrics
+from bbb.layers.misc import ModuleWrapper
 
 
 class BBBConv2d(ModuleWrapper):

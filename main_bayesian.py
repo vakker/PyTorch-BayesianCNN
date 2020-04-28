@@ -9,9 +9,7 @@ from torch.nn import functional as F
 from torch.optim import Adam
 
 import config_bayesian as cfg
-import metrics
-import utils
-from bbb import data
+from bbb import data, metrics, utils
 from bbb.models.BayesianModels.Bayesian3Conv3FC import BBB3Conv3FC
 from bbb.models.BayesianModels.BayesianAlexNet import BBBAlexNet
 from bbb.models.BayesianModels.BayesianLeNet import BBBLeNet
