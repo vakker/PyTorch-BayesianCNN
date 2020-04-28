@@ -1,8 +1,8 @@
 import torch.nn as nn
 import math
-from layers.BBBConv import BBBConv2d
-from layers.BBBLinear import BBBLinear
-from layers.misc import FlattenLayer, ModuleWrapper
+from bbb.layers.BBBConv import BBBConv2d
+from bbb.layers.BBBLinear import BBBLinear
+from bbb.layers.misc import FlattenLayer, ModuleWrapper
 
 
 class BBBAlexNet(ModuleWrapper):

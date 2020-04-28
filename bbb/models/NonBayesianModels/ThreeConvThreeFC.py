@@ -1,5 +1,5 @@
 import torch.nn as nn
-from layers.misc import FlattenLayer
+from bbb.layers.misc import FlattenLayer
 
 
 def conv_init(m):

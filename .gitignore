@@ -1,5 +1,5 @@
-checkpoint/
-data/
+checkpoints/
+datasets/
 checkpoint_/
 *.pyc
 

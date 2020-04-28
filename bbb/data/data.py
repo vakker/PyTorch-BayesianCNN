@@ -13,20 +13,20 @@ def getDataset(dataset):
         ])
 
     if(dataset == 'CIFAR10'):
-        trainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform)
-        testset = torchvision.datasets.CIFAR10(root='./data', train=False, download=True, transform=transform)
+        trainset = torchvision.datasets.CIFAR10(root='./datasets', train=True, download=True, transform=transform)
+        testset = torchvision.datasets.CIFAR10(root='./datasets', train=False, download=True, transform=transform)
         num_classes = 10
         inputs=3
 
     elif(dataset == 'CIFAR100'):
-        trainset = torchvision.datasets.CIFAR100(root='./data', train=True, download=True, transform=transform)
-        testset = torchvision.datasets.CIFAR100(root='./data', train=False, download=True, transform=transform)
+        trainset = torchvision.datasets.CIFAR100(root='./datasets', train=True, download=True, transform=transform)
+        testset = torchvision.datasets.CIFAR100(root='./datasets', train=False, download=True, transform=transform)
         num_classes = 100
         inputs = 3
         
     elif(dataset == 'MNIST'):
-        trainset = torchvision.datasets.MNIST(root='./data', train=True, download=True, transform=transform)
-        testset = torchvision.datasets.MNIST(root='./data', train=False, download=True, transform=transform)
+        trainset = torchvision.datasets.MNIST(root='./datasets', train=True, download=True, transform=transform)
+        testset = torchvision.datasets.MNIST(root='./datasets', train=False, download=True, transform=transform)
         num_classes = 10
         inputs = 1
 

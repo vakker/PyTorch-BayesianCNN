@@ -8,15 +8,15 @@ import torch
 import torch.nn as nn
 
 import utils
-from models.BayesianModels.Bayesian3Conv3FC import BBB3Conv3FC
-from models.BayesianModels.BayesianAlexNet import BBBAlexNet
-from models.BayesianModels.BayesianLeNet import BBBLeNet
-from models.NonBayesianModels.AlexNet import AlexNet
-from models.NonBayesianModels.LeNet import LeNet
-from models.NonBayesianModels.ThreeConvThreeFC import ThreeConvThreeFC
-from layers.BBBConv import BBBConv2d
-from layers.BBBLinear import  BBBLinear
-from layers.misc import FlattenLayer
+from bbb.models.BayesianModels.Bayesian3Conv3FC import BBB3Conv3FC
+from bbb.models.BayesianModels.BayesianAlexNet import BBBAlexNet
+from bbb.models.BayesianModels.BayesianLeNet import BBBLeNet
+from bbb.models.NonBayesianModels.AlexNet import AlexNet
+from bbb.models.NonBayesianModels.LeNet import LeNet
+from bbb.models.NonBayesianModels.ThreeConvThreeFC import ThreeConvThreeFC
+from bbb.layers.BBBConv import BBBConv2d
+from bbb.layers.BBBLinear import  BBBLinear
+from bbb.layers.misc import FlattenLayer
 
 cuda_available = torch.cuda.is_available()
 bayesian_models = [BBBLeNet, BBBAlexNet, BBB3Conv3FC]
